@@ -11,12 +11,12 @@ const getPosts = async () => {
 
 export default async function Home() {
   let data: Array<any> = []
-  // try {
-  //   const res = await getPosts()
-  //   data = res.data
-  // } catch (err) {
-  //   console.error(err)
-  // }
+  try {
+    const res = await getPosts()
+    data = res.data
+  } catch (err) {
+    console.error(err)
+  }
   return (
     <main className="py-8 px-48">
       <h2>Create a new post !</h2>
