@@ -10,7 +10,7 @@ const getPosts = async () => {
 }
 
 export default async function Home() {
-  let data = null
+  let data = []
   try {
     const res = await getPosts()
     data = res.data
