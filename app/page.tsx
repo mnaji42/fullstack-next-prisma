@@ -1,7 +1,7 @@
 import Form from "./Form"
 
 const getPosts = async () => {
-  const res = await fetch(`${process.env.BASE_URL}/api/posts`)
+  const res = await fetch(`${process.env.BASE_URL || ""}/api/posts`)
   if (!res.ok) {
     console.log(res)
     throw res
