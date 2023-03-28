@@ -7,7 +7,7 @@ declare global {
 }
 
 // add prisma to the NodeJS global type
-interface CustomNodeJsGlobal extends NodeJS.Global {
+interface CustomNodeJsGlobal {
   prisma: PrismaClient
 }
 
